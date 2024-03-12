@@ -1,0 +1,9 @@
+# Introduction
+
+## About me
+
+Hi, this is Zhenghao, the author of this learning diary. At present, I'm working on my MSc on Urban Spatial Science. Majoring in IoT Engineering, I had a few courses on computer science and quite a lot project experience working with coding and data during my undergraduate education.
+
+## About this diary
+
+This is a learning diary of one of my Msc module, CASA0023: Remotely Sensing Cities and Environments. I'm hoping to learn something about remote sensing in this module, involving what is RS, how is it utilized, what is the typical workflow dealing with RS data.

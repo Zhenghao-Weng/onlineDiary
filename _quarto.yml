@@ -1,0 +1,21 @@
+project:
+  type: book
+
+book:
+  title: "diary"
+  author: "Norah Jones"
+  date: "2024/3/12"
+  chapters:
+    - intro.qmd
+    - week1_Introduction.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
