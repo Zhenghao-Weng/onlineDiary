@@ -1,12 +1,13 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "diary"
-  author: "Norah Jones"
+  author: "Zhenghao Weng"
   date: "2024/3/12"
   chapters:
-    - intro.qmd
+    - index.qmd
     - week1_Introduction.qmd
 
 bibliography: references.bib
