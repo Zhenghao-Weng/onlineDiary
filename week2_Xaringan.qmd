@@ -1,0 +1,8 @@
+# Xaringan
+
+This is a Xaringan presentation on LiDAR:
+
+```{r xaringan_embed, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://zhenghao-weng.github.io/XaringaanPre_week2/", ratio = "4:3")
+
+```

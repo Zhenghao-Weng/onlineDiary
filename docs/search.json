@@ -26,5 +26,40 @@
     "title": "2  Introduction to Remote Sensing",
     "section": "",
     "text": "3 Summary"
+  },
+  {
+    "objectID": "week1_Introduction.html#summary",
+    "href": "week1_Introduction.html#summary",
+    "title": "2  Introduction to Remote Sensing",
+    "section": "2.1 Summary",
+    "text": "2.1 Summary\nThis week’s topic involves some basic concepts of remote sensing (RS). RS is defined as the science of obtaining information about an object or area from a distance, typically from instruments on satellites or aircraft.\n\n2.1.1 Active & Passive Sensors\n\nPassive Sensors: Depend on sunlight reflected from the Earth’s surface. Their effectiveness can be hindered by clouds or atmospheric conditions.\nActive Sensors: Emit their own signals to the Earth and measure the reflection, allowing them to operate in darkness and penetrate cloud cover.\n\n\n\n\n2.1.2 The Electromagnetic Spectrum\nThe electromagnetic spectrum encompasses all types of electromagnetic radiation, ranging from gamma rays, which have very short wavelengths, to radio waves, which have very long wavelengths. The spectrum is divided into regions based on wavelength or frequency, including ultraviolet, visible light, infrared, microwave, and radio waves.\nIdentification and analysis of Earth’s surface materials and phenomena can be done through the detection of reflected electromagnetic radiation across different parts of the spectrum.\n\n\n2.1.3 Resolutions of Remote Sensing Data\nRemote sensing data is characterized by four types of resolution:\n\nSpectral Resolution: The number and range of spectral bands captured by the sensor.\nSpatial Resolution: The size of the smallest object that can be resolved, usually described by the size of the sensor’s pixels.\nTemporal Resolution: How often the sensor acquires data of the same area.\nRadiometric Resolution: The sensor’s ability to distinguish between different levels of radiance."
+  },
+  {
+    "objectID": "week1_Introduction.html#application",
+    "href": "week1_Introduction.html#application",
+    "title": "2  Introduction to Remote Sensing",
+    "section": "2.2 Application",
+    "text": "2.2 Application\nJingzhe discusses the remote sensing monitoring of soil degradation in his work ‘Remote sensing of soil degradation: Progress and perspective’. The article points out that soil degradation has become a global issue under the influence of climate change and human activities. Remote sensing technology, due to its efficiency and wide coverage, has been widely applied in soil degradation research. The review covers the latest developments in ground-based, proximal, and novel remote sensing technologies in soil degradation research, and reviews remote sensing indicators for monitoring soil degradation-related characteristics."
+  },
+  {
+    "objectID": "week1_Introduction.html#reflection",
+    "href": "week1_Introduction.html#reflection",
+    "title": "2  Introduction to Remote Sensing",
+    "section": "2.3 Reflection",
+    "text": "2.3 Reflection\nAfter reading the paper by Jingzhe et al., I am amazed at how much help RS technology can provide in analyzing soil degradation issues. RS technology not only locates soil degradation problems but also distinguishes different forms of soil degradation: soil erosion, soil salinization, soil desertification, and soil heavy metal pollution. Among them, I am impressed by soil heavy metal pollution, which directly identifies the components of heavy metal pollution in the soil through the different spectral reflectance rates of different metals.\n\nThis application aligns well with the principles of RS technology itself and provides an innovative solution to locate soil heavy metal pollution without the need for actual sample analysis. This solution offers significant advantages in terms of time, cost, and the health of researchers when locating large-scale pollution problems."
+  },
+  {
+    "objectID": "week1_Introduction.html#references",
+    "href": "week1_Introduction.html#references",
+    "title": "2  Introduction to Remote Sensing",
+    "section": "2.4 References",
+    "text": "2.4 References\nJingzhe Wang, Jianing Zhen, et al. (2023) ‘Remote sensing of soil degradation: Progress and perspective’, International Soil and Water Conservation Research, 11, 3, pp. 429-454"
+  },
+  {
+    "objectID": "week2_Xaringan.html",
+    "href": "week2_Xaringan.html",
+    "title": "3  Xaringan",
+    "section": "",
+    "text": "This is a Xaringan presentation on LiDAR:"
   }
 ]

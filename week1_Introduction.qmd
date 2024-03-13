@@ -1,3 +1,47 @@
 # Introduction to Remote Sensing
 
-# Summary
+## Summary
+
+This week's topic involves some basic concepts of remote sensing (RS). RS is defined as the science of obtaining information about an object or area from a distance, typically from instruments on satellites or aircraft.
+
+### **Active & Passive Sensors**
+
+-   **Passive Sensors**: Depend on sunlight reflected from the Earth's surface. Their effectiveness can be hindered by clouds or atmospheric conditions.
+
+-   **Active Sensors**: Emit their own signals to the Earth and measure the reflection, allowing them to operate in darkness and penetrate cloud cover.
+
+    ![](images/active_sensor.png)
+
+### **The Electromagnetic Spectrum**
+
+The electromagnetic spectrum encompasses all types of electromagnetic radiation, ranging from gamma rays, which have very short wavelengths, to radio waves, which have very long wavelengths. The spectrum is divided into regions based on wavelength or frequency, including ultraviolet, visible light, infrared, microwave, and radio waves.
+
+Identification and analysis of Earth's surface materials and phenomena can be done through the detection of reflected electromagnetic radiation across different parts of the spectrum.
+
+### **Resolutions of Remote Sensing Data**
+
+Remote sensing data is characterized by four types of resolution:
+
+-   **Spectral Resolution**: The number and range of spectral bands captured by the sensor.
+
+-   **Spatial Resolution**: The size of the smallest object that can be resolved, usually described by the size of the sensor's pixels.
+
+-   **Temporal Resolution**: How often the sensor acquires data of the same area.
+
+-   **Radiometric Resolution**: The sensor's ability to distinguish between different levels of radiance.
+
+## Application
+
+Jingzhe discusses the remote sensing monitoring of soil degradation in his work 'Remote sensing of soil degradation: Progress and perspective'. The article points out that soil degradation has become a global issue under the influence of climate change and human activities. Remote sensing technology, due to its efficiency and wide coverage, has been widely applied in soil degradation research. The review covers the latest developments in ground-based, proximal, and novel remote sensing technologies in soil degradation research, and reviews remote sensing indicators for monitoring soil degradation-related characteristics.
+
+## Reflection
+
+After reading the paper by Jingzhe et al., I am amazed at how much help RS technology can provide in analyzing soil degradation issues. RS technology not only locates soil degradation problems but also distinguishes different forms of soil degradation: soil erosion, soil salinization, soil desertification, and soil heavy metal pollution. Among them, I am impressed by soil heavy metal pollution, which directly identifies the components of heavy metal pollution in the soil through the different spectral reflectance rates of different metals.
+
+![](images/soil_metal.jpg)
+
+This application aligns well with the principles of RS technology itself and provides an innovative solution to locate soil heavy metal pollution without the need for actual sample analysis. This solution offers significant advantages in terms of time, cost, and the health of researchers when locating large-scale pollution problems.
+
+## References
+
+Jingzhe Wang, Jianing Zhen, *et al.* (2023) 'Remote sensing of soil degradation: Progress and perspective', *International Soil and Water Conservation Research*, 11, 3, pp. 429-454
