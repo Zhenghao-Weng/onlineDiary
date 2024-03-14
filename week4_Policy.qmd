@@ -12,7 +12,7 @@ Jakarta is the cultural, political and economical heart of Indonesia. This huge 
 
 ### **Metropolitan Policy**
 
-PetaJakarta.org is a research project led by the SMART Infrastructure Facility, University of Wollongong in collaboration with the Jakarta Emergency Management Agency (BPBD DKI Jakarta) and Twitter Inc. The project enabled Jakarta\'s citizens to report the locations of flood events using the social media network Twitter, thereby contributing to a publicly accessible real-time map of flood conditions at PetaJakarta.org. These data were used by BPBD DKI Jakarta to cross-validate formal reports of flooding from traditional data sources, supporting the creation of information for flood assessment, response, and management in real-time.
+PetaJakarta.org is a research project led by the SMART Infrastructure Facility, University of Wollongong in collaboration with the Jakarta Emergency Management Agency (BPBD DKI Jakarta) and Twitter Inc. The project enabled Jakarta's citizens to report the locations of flood events using the social media network Twitter, thereby contributing to a publicly accessible real-time map of flood conditions at PetaJakarta.org. These data were used by BPBD DKI Jakarta to cross-validate formal reports of flooding from traditional data sources, supporting the creation of information for flood assessment, response, and management in real-time.
 
 ### National Policy
 
@@ -20,7 +20,7 @@ Indonesia's 2007 Spatial Planning Act is essential to increasing water capacity 
 
 ### International Policy
 
-On December 19, 2022, the World Bank\'s Board of Executive Directors approved a US\$400 million loan to support the Government of Indonesia in protecting an estimated 6.3 million people in cities across Indonesia from damage caused by flooding and in bolstering national flood resilience management. The National Urban Flood Resilience Project (NUFReP) will help cities reduce the flood risk by increasing national and city-level flood risk management capacity and through investments for integrated urban flood risk management. It will also support the government in establishing and operationalizing a national urban flood resilience program. The national urban flood resilience program supported by NUFReP will offer a menu of measures to help cities with different flood and climate risks in an integrated manner. This program will serve as a national umbrella program to help coordinate sources of financing and function as a knowledge hub to help Indonesian cities leverage good practices and continuously advance sector policy, practice, and innovation.
+On December 19, 2022, the World Bank's Board of Executive Directors approved a US\$400 million loan to support the Government of Indonesia in protecting an estimated 6.3 million people in cities across Indonesia from damage caused by flooding and in bolstering national flood resilience management. The National Urban Flood Resilience Project (NUFReP) will help cities reduce the flood risk by increasing national and city-level flood risk management capacity and through investments for integrated urban flood risk management. It will also support the government in establishing and operationalizing a national urban flood resilience program. The national urban flood resilience program supported by NUFReP will offer a menu of measures to help cities with different flood and climate risks in an integrated manner. This program will serve as a national umbrella program to help coordinate sources of financing and function as a knowledge hub to help Indonesian cities leverage good practices and continuously advance sector policy, practice, and innovation.
 
 ## Application
 
@@ -32,7 +32,7 @@ The integration of Landsat satellite data can positively impact Jakarta's policy
 
 -   **Data Verification and Supplement**: Landsat satellite data can independently verify flood conditions reported by users on Twitter. By comparing the flood extent in satellite imagery with community reports, the actual situation of the flood, including its spread and severity, can be understood more accurately.
 
--   **Enhanced Flood Monitoring Capability**: Combining community reports with Landsat data can create a more comprehensive flood monitoring system. Landsat\'s broad view and high spatiotemporal resolution imagery can capture flood events that Twitter reports might miss, making flood monitoring more comprehensive and timely.
+-   **Enhanced Flood Monitoring Capability**: Combining community reports with Landsat data can create a more comprehensive flood monitoring system. Landsat's broad view and high spatiotemporal resolution imagery can capture flood events that Twitter reports might miss, making flood monitoring more comprehensive and timely.
 
 ### **Impact on** NCICD
 
@@ -60,6 +60,6 @@ Rahadryan, A. (2019). Jakarta infrastructure: NCICD sea wall project delayed unt
 
 George, Elisha, et al. (2020). 'JAKARTA POLICY BRIEF', *CITY RESILIENCY AND CLIMATE CHANGE: A REPORT FROM THE INTER-POLICY SCHOOL SUMMIT 2020*, pp. 27--32, https://www.jstor.org/stable/resrep42654.7
 
-Syifa, Mutiara, et al. (2019). 'Flood Mapping Using Remote Sensing Imagery and Artificial Intelligence Techniques: A Case Study in Brumadinho, Brazil.\" *Journal of Coastal Research*, pp. 197--204. *JSTOR*, https://www.jstor.org/stable/26778954
+Syifa, Mutiara, et al. (2019). 'Flood Mapping Using Remote Sensing Imagery and Artificial Intelligence Techniques: A Case Study in Brumadinho, Brazil." *Journal of Coastal Research*, pp. 197--204. *JSTOR*, https://www.jstor.org/stable/26778954
 
 Munasinghe, Dinuke, Sagy Cohen, Yu-Fen Huang, Yin-Phan Tsang, Jiaqi Zhang, and Zheng Fang, (2018). 'Intercomparison of Satellite Remote Sensing-Based Flood Inundation Mapping Techniques'. *Journal of the American Water Resources Association* (JAWRA) 54(4), pp. 834--846. https://doi-org.libproxy.ucl.ac.uk/10.1111/1752-1688.12626
