@@ -1,0 +1,59 @@
+# Classification 1
+
+## Summary
+
+### Common workflow
+
+**Select Training Data**: In GEE, select training data by clicking the polygon symbol and adding polygons for the land cover types you wish to classify. Add a new layer for each different land cover type. These polygons then need to be merged into a feature collection.
+
+**Set Classifier Context**: Next, set some context for the classifier, such as which bands to use and the name of the classification property.
+
+**Extract Training Area Data**: Then, extract data from the training areas to prepare for classification training.
+
+**Train Classifier**: Train the classifier using the CART algorithm. After training, you can print some information about the classifier, such as maximum depth, variable importance, and the number of nodes.
+
+**Apply Classifier**: Finally, apply the trained classifier to the image, and then plot the output result on the map.
+
+### Split train & test data
+
+**Traditional Training and Testing Split Method**
+
+In this method, the process begins by adding a column of random numbers to the training dataset. These random numbers are used to divide the data into training and testing sets.
+
+**Add Random Column**: Add a column of random numbers to the polygon feature collection. These random numbers are used for subsequent data splitting.
+
+**Split Data**: Based on the values in the random number column, divide the data into training and testing sets. For example, a threshold (such as 0.7) can be set, where data with values below this threshold are used as the training set, and data with values equal to or greater than this threshold are used as the testing set.
+
+**Sampling and Validation**: Sample from the image for both the training and testing sets, and use these samples to train the classifier. Then, use the testing set to validate the accuracy of the classifier.
+
+**Pixel-Based Splitting Method**
+
+This method is more detailed, dividing pixels within each category randomly to generate training and testing sets.
+
+**Generate Random Points**: For each land cover type, generate a certain number of random points and assign category labels to these points.
+
+**Assign Random Numbers**: Assign random numbers to these points to divide them into training and testing sets.
+
+**Create Training and Validation Samples**: Based on the assigned random numbers, divide the points into training samples and validation samples. Then, sample from the image for these samples to obtain training and validation data.
+
+**Train and Validate Classifier**: Train the classifier using the training data, and then use the validation data to assess the classifier's performance. This can be done by calculating error matrices, overall accuracy, and user accuracy, among other metrics.
+
+## Application
+
+In a research on crop cultivation identification, the authors use a two-step process for crop classification (Wen, 2023). First, they employ the Canny edge detector combined with the Otsu automatic thresholding algorithm on time-series Sentinel-2 images to delineate field edges accurately. This step is crucial for minimizing classification errors caused by mixed pixels at the boundaries of cropland parcels. Second, they apply the Random Forest (RF) algorithm to classify crops based on phenological information extracted from time-series images of both Landsat and Sentinel-2. The RF model, configured with 500 trees, utilizes the yearly time series of Normalized Difference Vegetation Index (NDVI) and Land Surface Water Index (LSWI) as input variables. This phenology-based approach allows for the differentiation of crop types across the study area, taking advantage of the distinct seasonal growth patterns of different crops.
+
+![](images/classi.jpg)
+
+## Reflection
+
+The integration of remote sensing technology with classification methods, especially machine learning and deep learning algorithms, has brought revolutionary changes to fields such as environmental monitoring, agriculture, and urban planning. This integration leverages the richness and spatiotemporal information of remote sensing data to achieve precise classification and monitoring of land surface characteristics, improving the efficiency and accuracy of data processing.
+
+1.  **Improved Accuracy and Efficiency**: Machine learning and deep learning algorithms can process vast amounts of remote sensing data, improving the accuracy and efficiency of classification. This is particularly important for monitoring large-scale land surface changes.
+
+2.  **Multi-source Data Fusion**: The combination of different sources and types of remote sensing data (e.g., optical, radar, multi-temporal data) through optimized algorithmic processing provides more comprehensive and accurate monitoring results.
+
+3.  **Dynamic Monitoring and Analysis**: Using time series remote sensing data and classification algorithms enables dynamic monitoring of land surface changes and analysis of long-term trends, such as crop growth monitoring and urban expansion analysis.
+
+## Reference
+
+Wen, Z., Jiang, D., Jing, Ye, & Liu, G. (2023). 'Remote sensing classification approach to large-scale crop cultivation identification: A case study of the Aral Sea Basin'. *Transactions in GIS*, 27, pp. 2278--2296. doi: 10.1111/tgis.13120

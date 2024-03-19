@@ -1,0 +1,59 @@
+# Classification 2
+
+## Summary
+
+### **Sub-pixel Analysis:**
+
+**Spectral Unmixing**: This technique is used to estimate the fraction of land cover types within a pixel by comparing the pixel's spectral signature to those of "spectrally pure" end members. Two main approaches are discussed:
+
+1.  Defining end members directly through known values or selecting points on the image that represent pure land cover types.
+
+2.  Using training data to average the spectral signatures of land cover types and create end members.
+
+The **`unmix()`** function in GEE is then used to apply spectral unmixing to the image, producing a new image that represents the fractional composition of each land cover type within the pixels.
+
+### **Accuracy Assessment for Sub-pixel Analysis:**
+
+The webpage acknowledges the challenge of assessing accuracy in sub-pixel analysis due to the continuous nature of the output (fractions of land cover types). Two main approaches to address this challenge are mentioned:
+
+1.  Hardening the sub-pixel image by classifying each pixel based on the dominant land cover fraction (e.g., assigning a pixel to a land cover class if more than 50% of the pixel is composed of that class).
+
+2.  A more involved method that requires overlaying high-resolution imagery over Landsat pixels, digitizing high-resolution data within each pixel, and comparing the results.
+
+### **Object-based Image Analysis (OBIA):**
+
+**Image Gradient and Spectral Gradient**: Initial steps in OBIA involve identifying changes in intensity or color in an image to group pixels into objects.
+
+**Super Pixels and Clustering**: Techniques like k-means clustering and Simple Non-Iterative Clustering (SNIC) are introduced to segment the image into super pixels or objects based on spectral and spatial similarities.
+
+-   K-means clustering groups pixels into clusters with similar spectral properties.
+
+-   SNIC performs clustering without iterative processes, considering both color and spatial proximity to create more defined objects.
+
+The output of these clustering methods can then be used to extract additional information, such as standard deviation or NDVI for each object, which can assist in further classification or analysis.
+
+### **Classification of Objects:**
+
+It involves selecting training data (points or polygons) representing different land cover types, extracting features from the objects, and then training a classifier (e.g., CART) using this training data. The classified image is then visualized in GEE, showing the distribution of land cover types across the study area.
+
+## Application
+
+Traditionally, the accuracy of classifications is assessed using a confusion matrix, which provides a quantitative measure of classification performance but lacks spatial distribution information of errors. In their research, Alexis, et al. aims to address these limitations by incorporating geographically weighted approaches to model spatial variations in the accuracy of both Boolean and fuzzy land cover classifications.
+
+![](images/bool.jpg){fig-align="center"}
+
+Also, Mitchell, et al. review in their research that traditional accuracy metrics often overlook variance, which is crucial for making informed decisions based on map accuracy. The study compares a single split of data into training and test sets against a resampling framework where classification and accuracy assessment are repeated multiple times. The analysis, conducted using a simple vegetation mapping example with maximum likelihood and random forest classifiers, explores the impact of resampling and stratification design on accuracy metrics and class area estimates.
+
+![](images/workflow.jpg){fig-align="center"}
+
+## Reflection
+
+It is evident that the processing and analysis of remote sensing data are moving towards higher accuracy, efficiency, and automation. The accuracy and efficiency of remote sensing classification have significantly improved by utilizing advanced algorithms such as machine learning and deep learning. These algorithms are capable of processing and analyzing large-scale remote sensing data, extracting complex surface features, and thereby achieving more accurate identification of land cover types and monitoring changes.
+
+Looking forward, the future development of integrating classification algorithms with remote sensing will likely focus on further methodological innovations, particularly in improving accuracy assessment techniques. The trend is towards more dynamic, spatially-aware models that can better account for the complexity and variability of the earth's surface as captured by remote sensing technologies. As machine learning and deep learning algorithms continue to evolve, we can anticipate more sophisticated approaches for modeling and evaluating the accuracy of remote sensing classifications. This will likely involve integrating multi-source data, enhancing the resolution and quality of remote sensing inputs, and leveraging big data and cloud computing platforms for more efficient data processing and analysis. Together, these advancements will provide stronger support for global environmental monitoring efforts, contributing significantly to our understanding and management of natural and human-modified landscapes.
+
+## Reference
+
+Mitchell B. Lyons, David A. Keith, Stuart R. Phinn, Tanya J. Mason, Jane Elith, (2018.) 'A comparison of resampling methods for remote sensing classification and accuracy assessment', *Remote Sensing of Environment* 208, pp. 145-153, doi: 10.1016/j.rse.2018.02.026.
+
+Alexis Comber, Peter Fisher, Chris Brunsdon, Abdulhakim Khmag, (2012.) 'Spatial analysis of remote sensing image classification accuracy', *Remote Sensing of Environment* 127*,* pp. 237-246, doi: 10.1016/j.rse.2012.09.005.

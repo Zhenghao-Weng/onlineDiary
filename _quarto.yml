@@ -12,6 +12,9 @@ book:
     - week2_Xaringan.qmd
     - week3_Correction.qmd
     - week4_Policy.qmd
+    - week6_GEE.qmd
+    - week7_Classification1.qmd
+    - week8_Classification2.qmd
 
 bibliography: references.bib
 

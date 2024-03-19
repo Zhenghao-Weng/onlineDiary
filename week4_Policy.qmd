@@ -2,7 +2,11 @@
 
 ## Summary
 
-Jakarta is the cultural, political and economical heart of Indonesia. This huge cosmopolitan city is with 28 million inhabitants in its metropolitan area, one of the most densely populated cities of South East Asia. However, the Jakarta floods in early 2021 shows how the city's drainage network can no longer accommodate rainfall, resulting in floods in various locations. Aside from drainage issues, there are three key contributing factors to Jakarta's flooding:
+Jakarta is the cultural, political and economical heart of Indonesia. This huge cosmopolitan city is with 28 million inhabitants in its metropolitan area, one of the most densely populated cities of South East Asia. However, the Jakarta floods in early 2021 shows how the city's drainage network can no longer accommodate rainfall, resulting in floods in various locations.
+
+![](images/flood.jpg){fig-align="center"}
+
+Aside from drainage issues, there are three key contributing factors to Jakarta's flooding:
 
 -   **Extreme rainfall:** Highly intense and short extreme rainfall is becoming more frequent. Extreme rainfall is a direct result of the climate crisis.
 
