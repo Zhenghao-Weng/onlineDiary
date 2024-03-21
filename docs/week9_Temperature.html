@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Zhenghao Weng">
-<meta name="dcterms.date" content="2024-03-21">
 
-<title>Oline Learning Diary</title>
+<title>Oline Learning Diary - 9&nbsp; Temperature</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week1_Introduction.html" rel="next">
+<link href="./week8_Classification2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week9_Temperature.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Temperature</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -102,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -150,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week9_Temperature.html" class="sidebar-item-text sidebar-link">
+  <a href="./week9_Temperature.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Temperature</span></span></a>
   </div>
 </li>
@@ -164,11 +162,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#about-me" id="toc-about-me" class="nav-link" data-scroll-target="#about-me"><span class="header-section-number">1.1</span> About me</a></li>
-  <li><a href="#about-this-diary" id="toc-about-this-diary" class="nav-link" data-scroll-target="#about-this-diary"><span class="header-section-number">1.2</span> About this diary</a></li>
+  <li><a href="#vector-data" id="toc-vector-data" class="nav-link" data-scroll-target="#vector-data"><span class="header-section-number">9.1.1</span> <strong>Vector Data:</strong></a></li>
+  <li><a href="#landsat-data" id="toc-landsat-data" class="nav-link" data-scroll-target="#landsat-data"><span class="header-section-number">9.1.2</span> <strong>Landsat Data:</strong></a></li>
+  <li><a href="#modis-data" id="toc-modis-data" class="nav-link" data-scroll-target="#modis-data"><span class="header-section-number">9.1.3</span> <strong>MODIS Data:</strong></a></li>
+  <li><a href="#temperature-visualization" id="toc-temperature-visualization" class="nav-link" data-scroll-target="#temperature-visualization"><span class="header-section-number">9.1.4</span> <strong>Temperature Visualization:</strong></a></li>
+  <li><a href="#time-series-analysis" id="toc-time-series-analysis" class="nav-link" data-scroll-target="#time-series-analysis"><span class="header-section-number">9.1.5</span> <strong>Time Series Analysis:</strong></a></li>
+  <li><a href="#spatial-unit-statistics" id="toc-spatial-unit-statistics" class="nav-link" data-scroll-target="#spatial-unit-statistics"><span class="header-section-number">9.1.6</span> <strong>Spatial Unit Statistics:</strong></a></li>
+  <li><a href="#export-and-trend-analysis" id="toc-export-and-trend-analysis" class="nav-link" data-scroll-target="#export-and-trend-analysis"><span class="header-section-number">9.1.7</span> <strong>Export and Trend Analysis</strong></a></li>
   </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">9.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">9.4</span> Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -177,26 +183,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Oline Learning Diary</h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Temperature</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Zhenghao Weng </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -204,18 +198,61 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<section id="about-me" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="about-me"><span class="header-section-number">1.1</span> About me</h2>
-<p>Hi, this is Zhenghao, the author of this learning diary. At present, I’m working on my MSc on Urban Spatial Science. Majoring in IoT Engineering, I had a few courses on computer science and quite a lot project experience working with coding and data during my undergraduate education.</p>
+<section id="summary" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
+<p>Exploration of urban temperature variations using Landsat and MODIS satellite data.</p>
+<section id="vector-data" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="vector-data"><span class="header-section-number">9.1.1</span> <strong>Vector Data:</strong></h3>
+<p>The process begins with loading a level 2 administrative area (Beijing) to extract temperature data.</p>
 </section>
-<section id="about-this-diary" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="about-this-diary"><span class="header-section-number">1.2</span> About this diary</h2>
-<p>This is a learning diary of one of my Msc module, CASA0023: Remotely Sensing Cities and Environments. I’m hoping to learn something about remote sensing in this module, involving what is RS, how is it utilized, what is the typical workflow dealing with RS data.</p>
+<section id="landsat-data" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="landsat-data"><span class="header-section-number">9.1.2</span> <strong>Landsat Data:</strong></h3>
+<p>Landsat data is processed to examine urban temperatures during the summer months. The temperature band (B10) in Landsat, which is in Kelvin, is adjusted to Celsius. The process includes filtering the data by date, cloud cover, and applying scale factors to the thermal bands. A mean temperature image is then created and visualized with a specific color palette.</p>
+</section>
+<section id="modis-data" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="modis-data"><span class="header-section-number">9.1.3</span> <strong>MODIS Data:</strong></h3>
+<p>The MODIS instrument, aboard both the Terra and Aqua satellites, provides more frequent global coverage. The practical explores using MODIS data for the same period and area as the Landsat data, highlighting the differences in image resolution and the number of images available. The MODIS data also undergoes scaling adjustments to convert temperature values from Kelvin to Celsius.</p>
+</section>
+<section id="temperature-visualization" class="level3" data-number="9.1.4">
+<h3 data-number="9.1.4" class="anchored" data-anchor-id="temperature-visualization"><span class="header-section-number">9.1.4</span> <strong>Temperature Visualization:</strong></h3>
+<p>Both Landsat and MODIS processed data are visualized to display urban temperatures. The visualization parameters include a color palette that ranges from cool to warm temperatures.</p>
+</section>
+<section id="time-series-analysis" class="level3" data-number="9.1.5">
+<h3 data-number="9.1.5" class="anchored" data-anchor-id="time-series-analysis"><span class="header-section-number">9.1.5</span> <strong>Time Series Analysis:</strong></h3>
+<p>Create a time series chart of temperature using MODIS data, which allows for the observation of temperature changes over time, albeit with a loss of spatial detail.</p>
+</section>
+<section id="spatial-unit-statistics" class="level3" data-number="9.1.6">
+<h3 data-number="9.1.6" class="anchored" data-anchor-id="spatial-unit-statistics"><span class="header-section-number">9.1.6</span> <strong>Spatial Unit Statistics:</strong></h3>
+<p>Explore calculated average temperatures for smaller administrative units within Beijing using the <strong><code>reduceRegions</code></strong> function in GEE. This method enables the examination of temperature variations across different areas.</p>
+</section>
+<section id="export-and-trend-analysis" class="level3" data-number="9.1.7">
+<h3 data-number="9.1.7" class="anchored" data-anchor-id="export-and-trend-analysis"><span class="header-section-number">9.1.7</span> <strong>Export and Trend Analysis</strong></h3>
+<p>Export the processed data for further analysis outside of GEE. Introduce a heat index to categorize areas based on their vulnerability to high temperatures.</p>
+</section>
+</section>
+<section id="application" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="application"><span class="header-section-number">9.2</span> Application</h2>
+<p>GEE plays a critical role in some studies by enabling the processing of large datasets without demanding local computing power. In Ermida’s research, the methodology is based on GEE’s cloud computing capabilities (Ermida, et al., 2020). By providing a code repository for computing Landsat LST within GEE, the methodology significantly reduces the barriers to accessing and utilizing high-resolution LST data for environmental analysis. In another research by pedreros, they utilize GEE to access to and preprocessing of Landsat 7 and 8 satellite imagery covering the study period, including cloud cover removal and quality assessment and implement six methods for LSWT retrieval within the GEE environment, which could be a critical challenge without such cloud service.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/LSWT.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="reflection" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
+<p>In addition to the powerful analytical capabilities for large-scale data processing mentioned in the previous chapter on GEE, the two temperature research case studies demonstrated two additional advantages of GEE:</p>
+<ol type="1">
+<li><p><strong>Integration of Multiple Data Sources</strong>: GEE integrates a vast array of remote sensing datasets from different satellites, including Landsat and MODIS, allowing researchers to select the data most suited to their research needs. This data is significant for analyzing changes in land surface temperature, monitoring environmental changes, and more.</p></li>
+<li><p><strong>Automated Data Processing Workflow</strong>: By implementing various data processing and temperature extraction algorithms on the GEE platform, researchers can automate complex data analysis processes, thus enhancing research efficiency. For example, GEE can be utilized for extracting land surface temperature (LST), monitoring lake surface water temperature (LSWT), and other tasks.</p></li>
+</ol>
+</section>
+<section id="reference" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">9.4</span> Reference</h2>
+<p>ERMIDA, S.L., SOARES, P., MANTAS, V., FRANK-M GÖTTSCHE and TRIGO, I.F., (2020.) ‘Google Earth Engine Open-Source Code for Land Surface Temperature Estimation from the Landsat Series’.&nbsp;<em>Remote Sensing,</em> 12(9), pp.&nbsp;1471.</p>
+<p>PEDREROS-GUARDA, M., ABARCA-DEL-RÍO, R., ESCALONA, K., GARCÍA, I. and PARRA, Ó., (2021.) ‘A Google Earth Engine Application to Retrieve Long-Term Surface Temperature for Small Lakes. Case: San Pedro Lagoons, Chile’.&nbsp;<em>Remote Sensing,</em> 13(22), pp.&nbsp;4544.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -454,11 +491,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./week8_Classification2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification 2</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week1_Introduction.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

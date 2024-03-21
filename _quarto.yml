@@ -5,7 +5,7 @@ project:
 book:
   title: "Oline Learning Diary"
   author: "Zhenghao Weng"
-  date: "2024/3/12"
+  date: "2024/3/21"
   chapters:
     - index.qmd
     - week1_Introduction.qmd
@@ -15,6 +15,7 @@ book:
     - week6_GEE.qmd
     - week7_Classification1.qmd
     - week8_Classification2.qmd
+    - week9_Temperature.qmd
 
 bibliography: references.bib
 
